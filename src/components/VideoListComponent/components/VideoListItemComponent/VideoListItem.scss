@@ -1,0 +1,11 @@
+.cardElement {
+    margin-bottom: 1em;
+    border: 1px solid grey;
+    cursor: pointer;
+
+    .cover {
+        width: calc(100% / 2.8);
+        min-width: calc(100% / 2.8);
+        max-width: calc(100% / 2.8);
+    }
+}
