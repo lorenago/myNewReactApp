@@ -10,7 +10,7 @@ import './VideoDetail.scss';
 // Create a component
 const VideoDetail = ({ video }) => {
     if (!video) {
-        return <div>Loading...</div>
+        return <div>No se han encontrado resultados</div>
     };
 
     const videoId = video.id.videoId;
