@@ -1,5 +1,6 @@
 // Import library for making a component
 import React, { Component} from 'react';
+import _ from 'lodash';
 import YTSearch from 'youtube-api-search';
 
 import SearchBar from '../SearchBarComponent/SearchBar';
@@ -32,9 +33,11 @@ class MainContent extends Component {
     }
 
     render() {
+        const videoSearch = _.debounce(term => { this.videoSearch(term) }, 300); // Lodash limit searchVideo call max. once per 300 miliseconds
+        
         return (
             <div>
-                <SearchBar onSearchTermChange={ term => this.videoSearch(term) }/>
+                <SearchBar onSearchTermChange={ videoSearch }/>
                 <div className="videoContent">
                     <VideoDetail className="flex-2" video={ this.state.selectedVideo } />
                     <VideoList

@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TopMenu headerText={'Narrativas'} />
+        <TopMenu headerText={ 'Tu video' } />
         <MainContent />
       </div>
     )
