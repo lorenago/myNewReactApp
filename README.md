@@ -1,5 +1,6 @@
 # myNewReactApp
 App to make Youtube video searches
+gh-pages for this project: https://lorenago.github.io/myNewReactApp
 
 -------------------------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
